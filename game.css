@@ -1,0 +1,86 @@
+#container {
+    display: flex;
+    gap: 10px;
+    width:100%;
+    position:relative;
+    margin:auto;
+    width:80vw;
+    height:90vh;
+
+}
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+h2 {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+}
+@font-face {
+    font-family: "classicText";
+    src: url("FlappybirdyRegular-KaBW.ttf");
+}
+
+@font-face {
+    font-family: "flappyNumbers";
+    src: url("flappy-bird-font.ttf");
+}
+
+#text{
+    text-align: center;
+    margin:auto;
+    font-size: 200%;
+    font-weight: bold;
+    font-family: "classicText";
+}
+
+#endGame{
+    text-align: center;
+    margin:auto;
+    font-size: 200%;
+    font-weight: bold;
+    font-family: "classicText";
+}
+
+#button{
+    font-family: "classicText";
+    text-align: center;
+    padding: 10px;
+    font-size: 7vh;
+    border-radius: 15%;
+    cursor: pointer;
+    background-color: skyblue;
+}
+
+.statSpan{
+    font-family: "flappyNumbers";
+    font-size: 50px;
+}
+
+span{    
+    font-family: flappyNumbers;
+}
+
+h2{
+    font-family: "classicText";
+    padding: 10px;
+    font-size: 200%;
+}
+
+body{
+    background-color: gray;
+}
+
+#oxygen {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-family: "classicText";
+    font-size: 200%;
+}

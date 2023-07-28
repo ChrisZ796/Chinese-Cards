@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <audio id = "musicTrack">
+        <source id = "musicSource" src = "Castlevania-VampireKiller.ogg" type="audio/ogg">
+    </audio>
+    <div id="container">
+        <canvas id="canvas" style="border: 1px solid black" width="700" height="600"></canvas>
+        <h2>SCORE: <span id="score" class="statSpan"></span></h2>
+        <div id="oxygen">Oxygen: <span id="oxygenValue">100</span>%</div>
+    </div>
+        
+    
+    <p id = "text">Tap UP arrow to begin!</p>
+    <p id = "endGame">Gameover! Tap "e" to restart the game!</p>
+   
+    <a href = "index.html">
+        <button id = "button">BACK</button>
+    </a>
+    
+    <script src="game.js"></script>
+    
+</body>
+</html>

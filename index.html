@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Home</title>
+    <link rel="stylesheet" href="homeScreen.css">
+</head>
+<body>
+    <audio id = "musicTrack">
+        <source id = "musicSource" src = "Castlevania-VampireKiller.ogg" type="audio/ogg">
+    </audio>
+    <div id="mainContainer">
+        <h1 id="header" onclick = "toggleSoundIcon()">Flappy Bird <img width = "50px" id = "trackOFF" src = "Sound Icon OFF.png" alt = "Sound Icon OFF"><img width = "50px" id = "trackON" src = "Sound Icon ON.png" alt = "Sound Icon ON"></h1>
+        <h2 id="start"> <a href="flappyGame.html" style="text-decoration: none; color: red">START</a></h2>
+        <h2 id="stats">STATISTICS</h2>
+        <h2 id="credits">CREDITS</h2>
+        <h2 id="settings">PLANET SELECTION</h2>
+    </div>
+<!-- Below is Stat screen =========================================================== -->
+    <div id="statContainer">   
+        <h1 id="statHeader">STATS</h1>
+        <p class="stat">Longest Distance: <span id="distance" class="statSpan"></span></p>
+        <p class="stat">Total Attempts: <span id="attempts" class="statSpan"></span></p>
+    </div>
+<!-- Below is Credits screen  =====================================================   -->
+    <div id = "Credits">
+        <h1 id = "creditsHeader">CREDITS</h1>
+        <p class = "contributor">Christopher Zhang</p>
+        <p class="contributor">Cindy Zheng</p>
+        <p class = "contributor">Hao Ran Gou</p>
+        <p class = "contributor">Jarron Deng</p>
+        <p class = "contributor">Owen Kingsley</p>
+    </div>
+<!-- Below is Settings screen =====================================================   -->
+    <div id="settingsBar">
+        <h1 id="settingTitle">PLANET SELECTION</h1>
+        <div id="planets">
+            <div id = "EARTH">
+                <h2 id="earth" onclick=changeEarth()>Earth</h2>
+                <p>Gravity strength:          <span class = "trait" id="earthGravity">Normal</span></p>
+                <p>Has oxygen:            <span class = "trait" id="earthOxygen">Yes</span></p>
+                <p>Wind speed:            <span class = "trait" id="earthWind">Normal</span></p>
+            </div>
+            <div id = "MOON">
+                <h2 id="moon" onclick="changeMoon()">Moon</h2>
+                <p>Gravity strength:          <span class = "trait" id="moonGravity">Low</span></p>
+                <p>Has oxygen:           <span class = "trait" id="moonOxygen">No</span></p>
+                <p>Wind speed:         <span class = "trait" id="moonWind">Slow</span></p>
+            </div>
+            <div id = "JUBILEE" onclick="changeJubilee()">
+                <h2 id="jubilee">Jubilee</h2>
+                <p>Gravity strength:           <span class = "trait" id="jubileeGravity">Low</span></p>
+                <p>Has oxygen:         <span class = "trait" id="jubileeOxygen">Yes</span></p>
+                <p>Wind speed:         <span class = "trait" id="jubileeWind">Fast</span></p>
+            </div>
+            <div id = "ARGONIA" onclick="changeArgonia()">
+                <h2 id="argonia">Argonia</h2>
+                <p>Gravity strength:           <span class = "trait" id="argoniaGravity">High</span></p>
+                <p>Has oxygen:         <span class = "trait" id="argoniaOxygen">No</span></p>
+                <p>Wind speed:         <span class = "trait" id="argoniaWind">Fast</span></p>
+            </div>
+        </div>
+    </div>
+    <script src = "gameScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+h2{
+    font-family: "classicText";
+    text-align: center;
+    padding: 10px;
+    font-size: 7vh;
+    cursor: pointer;
+}
+
+#start{
+    text-decoration: none;
+}
+
+p{
+    font-family: "classicText";
+    padding: 10px;
+    font-size: 6vh;
+}
+h1{
+    text-align: center;
+    font-family: "classicText";
+    padding: 20px;
+    font-size: 9vh;
+    cursor: pointer;
+}
+body{
+    background-image: url("earthBackdrop.jpg");
+    background-repeat: no-repeat;
+    background-size: 200vh;
+}
+@font-face {
+    font-family: "classicText";
+    src: url("FlappybirdyRegular-KaBW.ttf");
+}
+
+/* BELOW IS FOR STAT PAGE */
+/* ========================================================================================= */
+/* ========================================================================================= */
+/* ========================================================================================= */
+/* ========================================================================================= */
+/* ========================================================================================= */
+
+
+@font-face {
+    font-family: "flappyNumbers";
+    src: url("flappy-bird-font.ttf");
+}
+#statContainer{
+    width: 100vw;
+    height: 100vh;
+    font-family: "classicText";
+    display: none;
+    text-align: center;
+}
+.statSpan{
+    font-family: "flappyNumbers";
+    font-size: 50px;
+}
+#Credits{
+    text-align: center;
+    display: none;
+}
+#settingsBar{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+        "ti"
+        "pl"
+        "pl"
+        "pl";
+    font-family: classicText;
+    font-size: 50px;
+    display: none;
+}
+span{    
+    font-family: classicText;
+}
+#planets{
+    grid-area: pl;
+    justify-content: space-around;
+    display: flex;
+    margin: auto;
+}
+.trait{
+    font-family: classicText;
+}
+#settingTitle{
+    grid-area: ti;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+#heading{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    margin: auto;
+    width: 50vmin;
+    display: flex;
+    flex-wrap: wrap;
+}
+

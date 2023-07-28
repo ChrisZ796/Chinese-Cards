@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "myFirstFont";
+    src: url("FlappybirdyRegular-KaBW.ttf");
+}
+
+#header {
+    font-family: "myFirstFont";
+    font-size: 200px;
+}
